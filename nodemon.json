@@ -1,0 +1,5 @@
+{
+    "watch": ["server.json"],
+    "ext": "json"
+  }
+  

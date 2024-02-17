@@ -1,0 +1,177 @@
+{
+  "product": [
+    {
+      "id": 1,
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "category": "Groceries",
+      "description": "Natural Extracted Edible Oil is an excellent choice if you're looking for a healthier alternative. We extract using a method that doesn't involve excessive heat or chemicals, which helps retain more nutrients and antioxidants compared to other extraction methods. "
+    },
+    {
+      "id": 2,
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    },
+    {
+      "id": 3,
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "category": "Groceries",
+      "description": "Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps,Hand Sanitize₹ can give you that protection and safety to ensure upto 99.99% Germ Protection."
+    },
+    {
+      "id": 4,
+      "name": "Handpicked Red Chillies",
+      "price": "₹19.00",
+      "image": "/image/redchilli.PNG",
+      "category": "Groceries",
+      "description": "Spices like coriander, mustard seeds, ginger, cinnamon, and cardamom are essential across various Indian cuisines. Handpicked Red Chillies are completely free from artificial colou₹ and preservatives."
+    }
+  ],
+  "trending": [
+    {
+      "id": 1,
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "category": "Groceries"
+    },
+    {
+      "id": 2,
+      "name": "Assorted Coffee",
+      "price": "₹18.00",
+      "image": "/image/orangejuice.PNG",
+      "category": "Juice"
+    },
+    {
+      "id": 3,
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "category": "Groceries"
+    },
+    {
+      "id": 4,
+      "name": "Handpicked Red Chillies",
+      "price": "₹19.00",
+      "image": "/image/redchilli.PNG",
+      "category": "Groceries"
+    }
+  ],
+  "cart": [
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "id": 1
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "id": 2
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "id": 3
+    },
+    {
+      "name": "Handpicked Red Chillies",
+      "price": "₹19.00",
+      "image": "/image/redchilli.PNG",
+      "id": 4
+    },
+    {
+      "name": "Handpicked Red Chillies",
+      "price": "₹19.00",
+      "image": "/image/redchilli.PNG",
+      "id": 5
+    }
+  ],
+  "reviews": [
+    {
+      "review": "",
+      "name": "",
+      "email": "",
+      "id": 1
+    }
+  ],
+  "everything": [
+    {
+      "id": 1,
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "category": "Groceries",
+      "description": "Natural Extracted Edible Oil is an excellent choice if you're looking for a healthier alternative. We extract using a method that doesn't involve excessive heat or chemicals, which helps retain more nutrients and antioxidants compared to other extraction methods. "
+    },
+    {
+      "id": 2,
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    },
+    {
+      "id": 3,
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "category": "Groceries",
+      "description": "Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps,Hand Sanitize₹ can give you that protection and safety to ensure upto 99.99% Germ Protection."
+    },
+    {
+      "id": 4,
+      "name": "Handpicked Red Chillies",
+      "price": "₹19.00",
+      "image": "/image/redchilli.PNG",
+      "category": "Groceries",
+      "description": "Spices like coriander, mustard seeds, ginger, cinnamon, and cardamom are essential across various Indian cuisines. Handpicked Red Chillies are completely free from artificial colou₹ and preservatives."
+    },
+    {
+      "id": 5,
+      "name": "Cashew Butter",
+      "price": "₹25.00",
+      "image": "/image/casheo.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    },
+    {
+      "id": 6,
+      "name": "Dal",
+      "price": "₹15.00",
+      "image": "/image/dal.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    },
+    {
+      "id": 7,
+      "name": "Cookies",
+      "price": "₹25.00",
+      "image": "/image/cookies.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    },
+    {
+      "id": 8,
+      "name": "Honey",
+      "price": "₹34.00",
+      "image": "/image/honey.PNG",
+      "category": "Groceries",
+      "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
+    }
+  ],
+  "search": [
+    {
+      "id": 1
+    }
+  ]
+}

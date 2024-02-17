@@ -1,0 +1,112 @@
+#logo{
+    width: 120px;
+    height: 70px;
+}
+#bestselling{
+ width: 100%;   
+}
+.upper-margin{
+    height: 100px;
+}
+.background-color{
+    /* background-color: #f8f6f3; */
+    background-color: #f8f6f3;
+}
+#head{
+    margin-top: 8%;
+}
+.my-btn{
+ width: 150px;
+ height: 50px;
+}
+.services{
+    height: 120px;
+    background-color: #333333;
+    margin: 7.5% 0% 7.5% 0% ;
+    padding: 15px;
+    border-radius: 2rem;
+}
+.servicehead{
+    font-size: 25px;
+}
+.servicedescription{
+    margin-left: 49px;
+}
+.fivestar{
+    width: 80px;
+    height: 20px;
+}
+.LINK{
+    text-decoration: none;
+    color: black;
+}
+ .product-image {
+    width: 100%;
+    height: 200px;
+}
+.card-body {
+    text-align: center;
+    flex: 1 1 auto;
+    padding: 1rem 1rem;
+}
+.category {
+    font-size: 15px;
+    margin-bottom: 2%;
+    color: grey;
+}
+.productname {
+    text-decoration: none;
+    color: black;
+}
+.card-title {
+    margin-bottom: 0.5rem;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.fivestar {
+    width: 80px;
+    height: 20px;
+}
+
+/* reviews form styling */
+.textarea{
+    width: 100%;
+    height: 100px;
+}
+.textbox{
+    margin:2%
+}
+.input-container{
+    margin: 2% 4.054% 2% 4.054%;
+}
+.input{
+    width: 100%;
+    height: 41px;
+}
+.produt_title{
+    font-size: 1.875rem;
+    margin: 0 0 .5em 0;
+}
+.addtocart{
+    padding: 10px 20px;
+    width: 50%;
+}
+#alert{
+    display: none;
+}
+.viewcart{
+    position: absolute;
+    right: 0px;
+    height: 50px;
+    width: 130px;
+    bottom: 3px;
+    background-color: rgb(106, 151, 57);
+    border-width: 0px;
+    border-radius: 4px;
+    color:white
+}
+.bestselling{
+    width: 500px;
+}
