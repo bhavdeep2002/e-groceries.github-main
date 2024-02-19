@@ -3,13 +3,18 @@ import React, { useEffect, useState } from 'react';
 
 export default function TableCart() {
   const [items, setItems] = useState([]);
-
+  const [count, setCount] =useState({})
   useEffect(() => {
     axios.get("http://localhost:3012/cart")
       .then((res) => {
         // Preprocess data to accumulate quantities for items with the same name
       
         setItems(res.data); // Update the 'items' state with processed data
+        
+        res.data.forEach(item => {
+          count[item.name] =(count[item.name] || 0) +1
+        });
+        console.log(count)
       })
       .catch((e) => {
         console.log(e);
@@ -19,7 +24,9 @@ export default function TableCart() {
   
 
   const calculateSubtotal = (price, quantity) => {
-    return price * quantity;
+    const parsedQuantity = parseInt(quantity, 10); // Convert quantity to number using parseInt
+    if (isNaN(parsedQuantity)) return 0; // If quantity is not a number, return 0
+    return price * parsedQuantity;
   };
 
   const removeItem = (itemId) => {
@@ -53,8 +60,8 @@ export default function TableCart() {
             <td>{item.name}</td>
             <td><img src={item.image} alt={item.name} style={{ maxWidth: '100px', maxHeight: '100px' }} /></td>
             <td>{item.price}</td>
-            <td>{item.quantity}</td>
-            
+            <td>{count[item.name]}</td>
+            <td>{calculateSubtotal(item.price, count[item.name])}</td>
           </tr>
         ))}
       </tbody>

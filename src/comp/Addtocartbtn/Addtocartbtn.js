@@ -42,24 +42,12 @@ export default function Addtocartbtn() {
         setIsDataUpdated(true)
     }
 
-    function quantity(name){
-        // Check if the item already exists in the list
-        axios.get("http://localhost:3012/cart")
-        .then((res) => {
-            console.log(res.data);
-        })
-        .catch((e) => {
-            console.log(e);
-        });
-    // const existingItem = item.find(item => item.name === name);
-    }
-
     return (
         <div className="row">
             <div className='col-md-12'>
                 <div>
                     <input
-                        onClick={() => { message(); quantity(name); }}
+                        onClick={() => { message();}}
                         style={{ backgroundColor: "#6a9739" }}
                         className='btn btn-success addtocart'
                         type="submit"
