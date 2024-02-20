@@ -4,28 +4,34 @@ import React, { useEffect, useState } from 'react';
 export default function TableCart() {
   const [items, setItems] = useState([]);
   const [count, setCount] =useState({})
+  const [serverUpdate, setSever] =useState(true)
   useEffect(() => {
     axios.get("http://localhost:3012/cart")
       .then((res) => {
         // Preprocess data to accumulate quantities for items with the same name
       
         setItems(res.data); // Update the 'items' state with processed data
-        
+        const counter = {}; // Initialize counter object
         res.data.forEach(item => {
-          count[item.name] =(count[item.name] || 0) +1
+          counter[item.name] =(counter[item.name] || 0) +1
         });
-        console.log(count)
+        setCount(counter);
+      
       })
       .catch((e) => {
         console.log(e);
       });
-  }, []); // Empty dependency array to execute only once when the component mounts
+  }, [serverUpdate]); // Empty dependency array to execute only once when the component mounts
 
-  
+  useEffect(() => {
+    console.log("hello")
+    console.log(count);
+  }, [count]); 
 
   const calculateSubtotal = (price, quantity) => {
+    price = parseFloat(price.replace("₹", ""));
     const parsedQuantity = parseInt(quantity, 10); // Convert quantity to number using parseInt
-    if (isNaN(parsedQuantity)) return 0; // If quantity is not a number, return 0
+    
     return price * parsedQuantity;
   };
 
@@ -34,6 +40,7 @@ export default function TableCart() {
       .then(response => {
         // Update the state by filtering out the deleted item
         setItems(prevItems => prevItems.filter(item => item.id !== itemId));
+        setSever(!serverUpdate)
       })
       .catch(error => {
         console.error('Error deleting item:', error);
@@ -56,7 +63,7 @@ export default function TableCart() {
       <tbody>
         {items.map((item, index) => (
           <tr key={index}>
-            <td><button onClick={() => removeItem(item.id)} type="button" className="btn-close" aria-label="Close"></button></td>
+            <td><button onClick={() => removeItem(item.id) } type="button" className="btn-close" aria-label="Close"></button></td>
             <td>{item.name}</td>
             <td><img src={item.image} alt={item.name} style={{ maxWidth: '100px', maxHeight: '100px' }} /></td>
             <td>{item.price}</td>
