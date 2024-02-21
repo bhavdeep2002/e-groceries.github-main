@@ -11,9 +11,24 @@ export default function TableCart() {
         // Preprocess data to accumulate quantities for items with the same name
       
         setItems(res.data); // Update the 'items' state with processed data
-        const counter = {}; // Initialize counter object
-        res.data.forEach(item => {
-          counter[item.name] =(counter[item.name] || 0) +1
+        
+        const counter = {}; // Initialize counter object , to store how same name items/object having same key name are presents in res.data array
+
+        const itemsWithCount = res.data.forEach(item => {// res.data is an array containing objects , each index is filled with object reference , here item resembles all objects present at each index
+          counter[item.name] =(counter[item.name] || 0) +1 // counter[item.name] this will find weather counter object contain the key with the name item.name , here it item.name will change for each index , for example res.data =[{name:"coffee"},{name:"redchilli"}] here at each index the name is different and foreach loop would go through all the indexs present in counter .
+
+          //counter={}
+          //counter[item.name] --> counter["coffee"] as 0th index the name is "coffee" in res.data array
+          // then this would check that the counter have a key named "coffee" or not, as the counter object is initially empty so the answer would be undefined of counter[item.name]
+          // (counter[item.name] || 0) +1  --> (undefined || 0) +1 =(0)+1 =1
+          // counter[item.name] = 1 this creates a key value pair of "coffee":1 in counter object 
+
+          return {
+            name: item.name,
+            count: counter[item.name],
+            image: item.image,
+            price: item.price
+          };
         });
         setCount(counter);
       
@@ -21,16 +36,15 @@ export default function TableCart() {
       .catch((e) => {
         console.log(e);
       });
-  }, [serverUpdate]); // Empty dependency array to execute only once when the component mounts
+  }, [serverUpdate]); // runs every time when serverUpdate is changed
 
   useEffect(() => {
-    console.log("hello")
     console.log(count);
   }, [count]); 
 
   const calculateSubtotal = (price, quantity) => {
     price = parseFloat(price.replace("₹", ""));
-    const parsedQuantity = parseInt(quantity, 10); // Convert quantity to number using parseInt
+    const parsedQuantity = parseInt(quantity); // Convert quantity to number using parseInt
     
     return price * parsedQuantity;
   };
