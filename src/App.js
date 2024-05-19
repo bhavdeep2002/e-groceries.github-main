@@ -1,4 +1,5 @@
 import Header from "./comp/Header/Header.js";
+import React from 'react';
 import "../node_modules/bootstrap/dist/css/bootstrap.min.css"
 import "../node_modules/bootstrap/dist/js/bootstrap.min.js"
 import Main from "./comp/Main/Main.js";
