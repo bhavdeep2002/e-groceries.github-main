@@ -68,88 +68,106 @@
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "id": 1
+      "count": 14,
+      "id": 34
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 1,
-      "id": 2
+      "count": 15,
+      "id": 35
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 2,
-      "id": 3
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "id": 4
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "id": 5
+      "count": 16,
+      "id": 36
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 3,
-      "id": 6
+      "count": 14,
+      "id": 37
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 4,
-      "id": 7
+      "count": 15,
+      "id": 38
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 5,
-      "id": 8
+      "count": 16,
+      "id": 39
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 6,
-      "id": 9
+      "count": 17,
+      "id": 40
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 7,
-      "id": 10
+      "count": 15,
+      "id": 41
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 8,
-      "id": 11
+      "count": 16,
+      "id": 42
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "count": 9,
-      "id": 12
+      "count": 17,
+      "id": 43
     },
     {
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
-      "id": 13
+      "count": 18,
+      "id": 44
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 13,
+      "id": 45
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 14,
+      "id": 46
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 13,
+      "id": 47
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 14,
+      "id": 48
     }
   ],
   "reviews": [

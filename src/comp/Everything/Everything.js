@@ -7,7 +7,7 @@ export default function Everything() {
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
   const [searchDropdown, setSearchDropdown] = useState([]);
-
+console.log(filteredProducts)
   useEffect(() => {
     axios.get('http://localhost:3012/everything')
       .then((res) => {
@@ -39,6 +39,17 @@ export default function Everything() {
     setFilteredProducts(filtered);
   };
 
+  const filterprice =(priceRange)=>{
+    const {min,max} =priceRange
+    console.log(min)
+    console.log(max)
+    const filter = products.filter((item) => {
+      const itemPrice = Number(item.price.replace("₹","")); // Convert price to number
+      
+      return itemPrice >= min && itemPrice <= max;
+  });
+  setFilteredProducts(filter);
+  }
   return (
     <div className="container-flex background-color">
       <div className="row">
@@ -66,7 +77,7 @@ export default function Everything() {
           </ul>
           <button className="btn btn-outline-success my-2 my-sm-0" type="submit" onClick={search}>Search</button>
         </div>
-        <FilterBarBootstrap />
+        <FilterBarBootstrap filterprice ={filterprice}/>
         <div className="col-md-6">
           <div className='row'>
             {filteredProducts.map((p) => (
