@@ -31,7 +31,7 @@
       "image": "/image/redchilli.PNG",
       "category": "Groceries",
       "description": "Spices like coriander, mustard seeds, ginger, cinnamon, and cardamom are essential across various Indian cuisines. Handpicked Red Chillies are completely free from artificial colou₹ and preservatives."
-    } 
+    }
   ],
   "trending": [
     {
@@ -63,7 +63,319 @@
       "category": "Groceries"
     }
   ],
-  "cart": [],
+  "cart": [
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 5,
+      "id": 6
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 6,
+      "id": 7
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 7,
+      "id": 8
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 8,
+      "id": 9
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 9,
+      "id": 10
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 10,
+      "id": 11
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 11,
+      "id": 12
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 12,
+      "id": 13
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 13,
+      "id": 14
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 9,
+      "id": 15
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 10,
+      "id": 16
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 11,
+      "id": 17
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 12,
+      "id": 18
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 13,
+      "id": 19
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 14,
+      "id": 20
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 15,
+      "id": 21
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 16,
+      "id": 22
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 17,
+      "id": 23
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 18,
+      "id": 24
+    },
+    {
+      "name": "Assorted Coffee",
+      "price": "₹35.00",
+      "image": "/image/coffee.PNG",
+      "count": 19,
+      "id": 25
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "id": 26
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "id": 27
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 2,
+      "id": 28
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 3,
+      "id": 29
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 4,
+      "id": 30
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 5,
+      "id": 31
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 6,
+      "id": 32
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 7,
+      "id": 33
+    },
+    {
+      "name": "Hand Sanitizer",
+      "price": "₹15.00",
+      "image": "/image/handsanatizer.PNG",
+      "count": 8,
+      "id": 34
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "id": 35
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "id": 36
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 2,
+      "id": 37
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 3,
+      "id": 38
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 4,
+      "id": 39
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 5,
+      "id": 40
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 6,
+      "id": 41
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 7,
+      "id": 42
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 8,
+      "id": 43
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 9,
+      "id": 44
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 10,
+      "id": 45
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 11,
+      "id": 46
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 12,
+      "id": 47
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 13,
+      "id": 48
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 14,
+      "id": 49
+    },
+    {
+      "name": "Natural Extracted Edible Oil",
+      "price": "₹25.00",
+      "image": "/image/oil.PNG",
+      "count": 15,
+      "id": 50
+    }
+  ],
   "reviews": [
     {
       "review": "",
@@ -142,12 +454,12 @@
     {
       "id": 1
     }
-  ]
-  ,"users": [
+  ],
+  "users": [
     {
       "id": 1,
       "email": "user@example.com",
-      "password": "password", 
+      "password": "password",
       "role": "user"
     },
     {
@@ -158,6 +470,10 @@
     }
   ],
   "posts": [
-    { "id": 1, "title": "Hello World", "author": "user@example.com" }
+    {
+      "id": 1,
+      "title": "Hello World",
+      "author": "user@example.com"
+    }
   ]
 }
