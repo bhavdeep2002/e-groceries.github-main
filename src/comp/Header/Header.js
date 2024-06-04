@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import "../../styles/styles.css"
+import Login from '../Login/Login';
 
 class Header extends Component {
   constructor(){
@@ -27,6 +28,7 @@ class Header extends Component {
                 </li>
                 <li className="nav-item">
                   <Link className="nav-link" to="/Juice">Juice</Link>
+                  <Link className="nav-link" to="/Login"><botton className="btn btn-success">Login</botton></Link>
                 </li>
               </ul>
             </div>
