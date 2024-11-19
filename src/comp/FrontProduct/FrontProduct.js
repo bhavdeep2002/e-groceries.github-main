@@ -5,7 +5,6 @@ import { FrontDetail } from '../ProductDetail/ProductDetail'
 
 export default function FrontProduct(props) {
   // here i have to use only id ,image so why i should have all the props like image,price,... so if want to use props i should have all the props inside this component so that the last component Addtocartbtn can have these all props
-
   // but there is a better way also to use context that having only required data for sepecific component
   const {id,image} =useContext(FrontDetail)
   return (

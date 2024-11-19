@@ -1,7 +1,7 @@
 {
   "product": [
     {
-      "id": 1,
+      "_id": 1,
       "name": "Natural Extracted Edible Oil",
       "price": "₹25.00",
       "image": "/image/oil.PNG",
@@ -9,7 +9,7 @@
       "description": "Natural Extracted Edible Oil is an excellent choice if you're looking for a healthier alternative. We extract using a method that doesn't involve excessive heat or chemicals, which helps retain more nutrients and antioxidants compared to other extraction methods. "
     },
     {
-      "id": 2,
+      "_id": 2,
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
@@ -17,7 +17,7 @@
       "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
     },
     {
-      "id": 3,
+      "_id": 3,
       "name": "Hand Sanitizer",
       "price": "₹15.00",
       "image": "/image/handsanatizer.PNG",
@@ -25,7 +25,7 @@
       "description": "Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps,Hand Sanitize₹ can give you that protection and safety to ensure upto 99.99% Germ Protection."
     },
     {
-      "id": 4,
+      "_id": 4,
       "name": "Handpicked Red Chillies",
       "price": "₹19.00",
       "image": "/image/redchilli.PNG",
@@ -35,358 +35,46 @@
   ],
   "trending": [
     {
-      "id": 1,
+      "_id": 1,
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
       "category": "Groceries"
     },
     {
-      "id": 2,
+      "_id": 2,
       "name": "Assorted Coffee",
       "price": "₹18.00",
       "image": "/image/orangejuice.PNG",
       "category": "Juice"
     },
     {
-      "id": 3,
+      "_id": 3,
       "name": "Hand Sanitizer",
       "price": "₹15.00",
       "image": "/image/handsanatizer.PNG",
       "category": "Groceries"
     },
     {
-      "id": 4,
+      "_id": 4,
       "name": "Handpicked Red Chillies",
       "price": "₹19.00",
       "image": "/image/redchilli.PNG",
       "category": "Groceries"
     }
   ],
-  "cart": [
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 5,
-      "id": 6
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 6,
-      "id": 7
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 7,
-      "id": 8
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 8,
-      "id": 9
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 9,
-      "id": 10
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 10,
-      "id": 11
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 11,
-      "id": 12
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 12,
-      "id": 13
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 13,
-      "id": 14
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 9,
-      "id": 15
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 10,
-      "id": 16
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 11,
-      "id": 17
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 12,
-      "id": 18
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 13,
-      "id": 19
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 14,
-      "id": 20
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 15,
-      "id": 21
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 16,
-      "id": 22
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 17,
-      "id": 23
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 18,
-      "id": 24
-    },
-    {
-      "name": "Assorted Coffee",
-      "price": "₹35.00",
-      "image": "/image/coffee.PNG",
-      "count": 19,
-      "id": 25
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "id": 26
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "id": 27
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 2,
-      "id": 28
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 3,
-      "id": 29
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 4,
-      "id": 30
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 5,
-      "id": 31
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 6,
-      "id": 32
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 7,
-      "id": 33
-    },
-    {
-      "name": "Hand Sanitizer",
-      "price": "₹15.00",
-      "image": "/image/handsanatizer.PNG",
-      "count": 8,
-      "id": 34
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "id": 35
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "id": 36
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 2,
-      "id": 37
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 3,
-      "id": 38
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 4,
-      "id": 39
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 5,
-      "id": 40
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 6,
-      "id": 41
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 7,
-      "id": 42
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 8,
-      "id": 43
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 9,
-      "id": 44
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 10,
-      "id": 45
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 11,
-      "id": 46
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 12,
-      "id": 47
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 13,
-      "id": 48
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 14,
-      "id": 49
-    },
-    {
-      "name": "Natural Extracted Edible Oil",
-      "price": "₹25.00",
-      "image": "/image/oil.PNG",
-      "count": 15,
-      "id": 50
-    }
-  ],
+  "cart": [],
   "reviews": [
     {
       "review": "",
       "name": "",
       "email": "",
-      "id": 1
+      "_id": 1
     }
   ],
   "everything": [
     {
-      "id": 1,
+      "_id": 1,
       "name": "Natural Extracted Edible Oil",
       "price": "₹25.00",
       "image": "/image/oil.PNG",
@@ -394,7 +82,7 @@
       "description": "Natural Extracted Edible Oil is an excellent choice if you're looking for a healthier alternative. We extract using a method that doesn't involve excessive heat or chemicals, which helps retain more nutrients and antioxidants compared to other extraction methods. "
     },
     {
-      "id": 2,
+      "_id": 2,
       "name": "Assorted Coffee",
       "price": "₹35.00",
       "image": "/image/coffee.PNG",
@@ -402,7 +90,7 @@
       "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
     },
     {
-      "id": 3,
+      "_id": 3,
       "name": "Hand Sanitizer",
       "price": "₹15.00",
       "image": "/image/handsanatizer.PNG",
@@ -410,7 +98,7 @@
       "description": "Washing your hands with soap and water is the best way to reduce the number of microbes on them. However, there can be situations where soap and/ or water are not available. In this situation where nothing else really helps,Hand Sanitize₹ can give you that protection and safety to ensure upto 99.99% Germ Protection."
     },
     {
-      "id": 4,
+      "_id": 4,
       "name": "Handpicked Red Chillies",
       "price": "₹19.00",
       "image": "/image/redchilli.PNG",
@@ -418,7 +106,7 @@
       "description": "Spices like coriander, mustard seeds, ginger, cinnamon, and cardamom are essential across various Indian cuisines. Handpicked Red Chillies are completely free from artificial colou₹ and preservatives."
     },
     {
-      "id": 5,
+      "_id": 5,
       "name": "Cashew Butter",
       "price": "₹25.00",
       "image": "/image/casheo.PNG",
@@ -426,7 +114,7 @@
       "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
     },
     {
-      "id": 6,
+      "_id": 6,
       "name": "Dal",
       "price": "₹15.00",
       "image": "/image/dal.PNG",
@@ -434,7 +122,7 @@
       "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
     },
     {
-      "id": 7,
+      "_id": 7,
       "name": "Cookies",
       "price": "₹25.00",
       "image": "/image/cookies.PNG",
@@ -442,7 +130,7 @@
       "description": "The unique blend of beans is sure to please every coffee lover. The instant coffee format allows you to enjoy the signature BRU taste in a convenient and easy way, no matter where you are"
     },
     {
-      "id": 8,
+      "_id": 8,
       "name": "Honey",
       "price": "₹34.00",
       "image": "/image/honey.PNG",
@@ -452,18 +140,18 @@
   ],
   "search": [
     {
-      "id": 1
+      "_id": 1
     }
   ],
   "users": [
     {
-      "id": 1,
+      "_id": 1,
       "email": "user@example.com",
       "password": "password",
       "role": "user"
     },
     {
-      "id": 2,
+      "_id": 2,
       "email": "admin@example.com",
       "password": "password",
       "role": "admin"
@@ -471,7 +159,7 @@
   ],
   "posts": [
     {
-      "id": 1,
+      "_id": 1,
       "title": "Hello World",
       "author": "user@example.com"
     }
