@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import Addtocartbtn from '../Addtocartbtn/Addtocartbtn';
 class Storedetail extends Component {
     render() {
         return (

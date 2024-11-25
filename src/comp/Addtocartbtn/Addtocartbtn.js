@@ -1,58 +1,42 @@
 import React, { useContext, useEffect, useState } from 'react';
 import swal from 'sweetalert';
-import { AlertMessage, Detail, FrontDetail } from '../ProductDetail/ProductDetail'; // Import AlertMessage context
-import axios from 'axios';
+import { AlertMessage, Detail, FrontImage } from '../ProductDetail/ProductDetail';
+import AddItems from '../AddItems/AddItems';
 
 export default function Addtocartbtn() {
-    // here i have used context if i use props, then this component's immedgate parent should contain all this props ,so if its immedgate parents have this then its grandparent should also have all this props ,so if i want to use props then i have to send props to all the child to have access to last grand child
-    
-    //but by using context hook i can sepecify which component should contain how much context/data ,this leads to components having only required information instead of having all the contexts
     const {setalert} = useContext(AlertMessage);
-    const {name ,price} =useContext(Detail)
-    const {image} =useContext(FrontDetail)
-    const [isDataUpdated, setIsDataUpdated] = useState(false);
-    const [item,setitem] =useState({})
+    const {name} =useContext(Detail)
+    const {_id} =useContext(FrontImage)
+    const [serverUpdate, setServer] = useState(false);
 
     useEffect(() => {
-        // Check if item state is updated and not empty
-        if(isDataUpdated){//this will not executed until/unless isDataUpdated is true, this protects unnessary rows in tablecart when ever Addtocartbtn has been rendered 
-            axios.post("http://localhost:3012/cart", item)
-            .then((res) => {
-                console.log(res);
-            })
-            .catch((e) => {
-                console.log(e);
-            });
+        if(serverUpdate){
+            AddItems(_id,setServer,serverUpdate,1)
         }  
 
-    }, [isDataUpdated,item]);// this will executed when ever from these two states has been changed
+    }, [serverUpdate]);
     
     function message() {
         swal({
             position: 'top-end',
             icon: 'success',
-            title: `Your item ${name} has been added to cart`, // Fix the interpolation syntax here
+            title: `Your item ${name} has been added to cart`,
             showConfirmButton: false,
             timer: 1500
         });
         setalert(`${name} has been added to cart`)
         document.getElementById('alert').style.display="block"
 
-        setitem({name,price,image})
-        setIsDataUpdated(true)
+        setServer(true)
     }
 
     return (
         <div className="row">
             <div className='col-md-12'>
                 <div>
-                    <input
-                        onClick={() => { message();}}
-                        style={{ backgroundColor: "#6a9739" }}
-                        className='btn btn-success addtocart'
-                        type="submit"
-                        value="ADD TO CART"
-                    />
+                    <button  onClick={() => { message();}}
+                    style={{ backgroundColor: "#6a9739" }}
+                    className='btn btn-success addtocart'>ADD TO CART</button>         
                 </div>
             </div>
         </div>

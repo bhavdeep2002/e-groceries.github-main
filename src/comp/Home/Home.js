@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Servicecontainer from '../Service-container/Servicecontainer';
 import Storedetail from '../StoreDetails/Storedetail';
-import Bestsellingproduct from '../Bestsellingproduct/Bestsellingproduct';
+import ProductsList from '../ProdustsLists/ProductsList';
 
 class Home extends Component {
     render() {
@@ -26,11 +26,11 @@ class Home extends Component {
                 <Servicecontainer />
 
                 {/*Bestselling products component having props as heading Best Selling Products */}
-                <Bestsellingproduct heading="Best Selling Products" urltype="bestselling-product" />
+                <ProductsList heading="Best Selling Products" urltype="bestselling" />
                 {/*Bestselling products component having props as heading Trending Products */}
-                <Bestsellingproduct heading="Trending Products" urltype="trending-product" />
+                <ProductsList heading="Trending Products" urltype="trending" />
                 {/*Bestselling products component having props as heading Customers Reviews*/}
-                <Bestsellingproduct heading="Customers Reviews" urltype="reviews" />
+                <ProductsList heading="Customers Reviews" urltype="reviews" />
                 
             </div>
         );

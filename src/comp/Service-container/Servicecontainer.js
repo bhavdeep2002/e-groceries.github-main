@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Service from '../Service/Service';
-import Bestsellingproduct from '../Bestsellingproduct/Bestsellingproduct';
 
 class Servicecontainer extends Component {
     constructor() {
