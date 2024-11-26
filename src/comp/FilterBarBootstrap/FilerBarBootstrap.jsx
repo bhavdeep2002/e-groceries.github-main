@@ -1,12 +1,22 @@
 // src/components/FilterBarBootstrap.js
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { InputGroup, FormControl, Button } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import axios from 'axios';
 
-const FilterBarBootstrap = ({filterprice}) => {
+const FilterBarBootstrap = ({setProducts}) => {
+
     const [priceRange, setPriceRange] = useState({ min: '', max: '' });
 
-    console.log(priceRange)
+    useEffect(()=>{
+        axios.get("http://localhost:8080/filter",{params:priceRange},{headers:{"Content-Type":"application/json"}})
+        .then((res)=>{
+            setProducts(res.data)
+        })
+        .catch(()=>{
+
+        })
+    },[priceRange])
     const handleInputChange = (e) => {
         
         const { name, value } = e.target;
@@ -33,11 +43,6 @@ const FilterBarBootstrap = ({filterprice}) => {
         // let obj = { name: value };  // obj will be { name: 100 }
     };
 
-    const applyFilter = () => {
-        console.log(priceRange)
-        filterprice(priceRange)
-    };
-
     return (
         // InputGroup is component imported from react-bootstrap, it contain a div element with class name input-group
         <InputGroup className="mb-3 mt-3">
@@ -57,7 +62,7 @@ const FilterBarBootstrap = ({filterprice}) => {
                 onChange={handleInputChange}
                 placeholder="Max Price"
             />
-            <Button variant="success" onClick={applyFilter}>Apply</Button>
+            <Button variant="success" >Apply</Button>
         </InputGroup>
         
     );

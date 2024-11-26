@@ -8,23 +8,17 @@ class Product extends Component {
     // console.log(props)
    
   //  storing/holding our props data in state
-    this.state = {
-      img: this.props.image,
-      category: this.props.category,
-      name: this.props.name,
-      price: this.props.price,
-      _id: this.props._id
-    }
+
   }
 
   render() {
-        const {img,category,name,price,_id} =this.state
+        const {image,category,name,price,_id} =this.props
     return (
-            <section>   
+            <section>
             {/*remember Link tag becomes anchor tag in DOM /Rendered HTML but page does reloads*/}
             <Link className='LINK' to={`/ProductDetail/${_id}`}>{/* when i click on the product it will past the link in url and ${_id} reprents the _id of a particular product from  our Route will match path and render a component corresponding to that path */}
               <div className="card">
-                <img className='product-image card-img-top' src={img} alt="..." />
+                <img className='product-image card-img-top' src={image} alt="..." />
                 <div className="card-body">
                   <div className="category">{category}</div>
                   <h5 className="card-title">{name}</h5>

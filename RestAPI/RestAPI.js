@@ -53,7 +53,17 @@ http.createServer((req,res)=>{
         .then((result)=>{res.end(JSON.stringify(result))})
         .catch((e)=>{console.log(e.message)})
     }
-    else if(method==='GET'){       
+    else if(method==='GET' && url.includes('/filter')){
+      let  body= url.split('?')[1].split('&')
+        let [min,max]=body
+        min=parseInt(min.split('=')[1])
+        max=parseInt(max.split('=')[1])
+        client.db().collection('post').find({$and:[{price:{$gte:min}},{price:{$lte:max}}]}).toArray()
+       .then((result)=>{res.end(JSON.stringify(result))})
+       .catch((e)=>console.log(e.message))
+    }
+    else if(method==='GET'){   
+        console.log(url)    
        let id= parseInt(url.split("/")[2])// this provides id
        client.db().collection('post').findOne({_id:id})
        .then((result)=>{res.end(JSON.stringify(result))})
