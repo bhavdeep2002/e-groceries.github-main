@@ -22,13 +22,13 @@ class Header extends Component {
             <div className="collapse navbar-collapse" id="navbarNav"  >
               <ul className="navbar-nav">
                 <li className="nav-item">
-                  <Link className="nav-a" to="/Everything">Everything</Link>
+                  <Link className="nav-a" to="/Vegitables&Friuts">Vegitables & Friuts</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-a" to="/Groceries">Groceries</Link>
+                  <Link className="nav-a" to="/Dairy&Breakfast">Dairy & Breakfast</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-a" to="/Juice">Juice</Link>
+                  <Link className="nav-a" to="/ColdDrink&Juice">Cold Drink & Juice</Link>
                 </li>
               </ul>
             </div>

@@ -1,7 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import Headingh2 from "../Headingh2/Headingh2"
 import Product from "../Product/Product"
+
 
 export default function ProductsList({urltype,heading}){
 

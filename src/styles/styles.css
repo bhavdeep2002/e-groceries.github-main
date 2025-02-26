@@ -8,10 +8,7 @@
 .upper-margin{
     height: 100px;
 }
-.background-color{
-    /* background-color: #f8f6f3; */
-    background-color: #f8f6f3;
-}
+
 #head{
     margin-top: 8%;
 }
@@ -74,6 +71,15 @@ p {
 .fivestar {
     width: 80px;
     height: 20px;
+}
+
+/* menu */
+li{
+    border:1px solid black;
+    margin-bottom: 2%;
+}
+li> img{
+width: 60px;
 }
 
 /* reviews form styling */

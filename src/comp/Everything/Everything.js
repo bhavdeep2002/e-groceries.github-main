@@ -1,56 +1,54 @@
 import React, { useEffect, useState } from 'react';
 import Product from '../Product/Product';
 import axios from 'axios';
-import FilterBarBootstrap from '../FilterBarBootstrap/FilerBarBootstrap';
+import { Slider } from '@mui/material';
 
-export default function Everything() {
+export default function Everything({url}) {
+  console.log(url)
   const [products, setProducts] = useState([]);
+  const [value, setValue] = useState([0, 40])
+  const [menu,setMenu] =useState([])
+
   useEffect(() => {
-    axios.get('http://localhost:8080/everything')
+    axios.get('http://localhost:8080/filter', { params: { min: value[0], max: value[1] } }, { headers: { "Content-Type": "application/json" } })
       .then((res) => {
         setProducts(res.data);
       })
       .catch((error) => {
         console.error('Error fetching data:', error);
       });
-  }, []);
+  }, [value]);
+
+  useEffect(()=>{
+    axios.get(`http://localhost:8080/${url}`,{headers:{"Content-Type":"text/plain"}})
+    .then((res)=>{
+      setMenu(res.data)
+    })
+    .catch((e)=>{
+      console.log(e.message)
+    })
+  },[])
 
   return (
-    <div className="container-flex background-color">
+    <div className="container background-color">
       <div className="row">
         <div className="col-md-12 upper-margin">
           {/* Upper margin content if needed */}
         </div>
       </div>
-      <div className="row">
-        <div className="col-md-3">
-          <input
-            style={{ backgroundColor: 'white', border: '1px solid' }}
-            id='dropdownMenuButton1'
-            className="btn dropdown-toggle item"
-            type="search"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          />
-          <ul className="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-            
-          </ul>
-          <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </div>
-        <FilterBarBootstrap setProducts={setProducts} />
-      </div>
       <div className='row'>
-        <div className="col-md-12" style={{ display: "flex", flexWrap: "wrap" }}>
-          {products.map((p,index)=>{    
-           return <div  className="col-md-3 card-div" style={{ width: "21%" }}>
-              <Product
-              key={index}
-                _id={p._id}
-                name={p.name}
-                price={p.price}
-                category={p.category}
-                image={p.image}
-              />
+        <div className='col-md-3' style={{ border: "solid lightgray 2px", backgroundColor: "white", paddingTop: "2%" }}>
+          <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+          <button style={{ marginTop: "5px" }} className="btn btn-outline-success" type="submit">Search</button>
+          <Slider style={{ color: 'green', margin: '5%', width: "90%" }} valueLabelDisplay='auto' getAriaValueText={(price) => { return `${price}` }} min={0} max={40} onChange={(e) => { setValue(e.target.value) }} value={value} />
+          <ol style={{ listStyle: "none" }}><h6>Vegitables & Friuts</h6>
+          {menu.map((item,index)=>{return <li key={index}><img src={item.image} />{item.name}</li>})}
+          </ol>
+        </div>
+        <div className='col-md-9' style={{ display: "flex", flexWrap: "wrap" }}>
+          {products && products.map((i, index) => {
+            return <div className='col-md-3' key={index} style={{ margin: "3%" }}>
+              <Product _id={i._id} name={i.name} category={i.category} price={i.price} image={i.image} />
             </div>
           })}
         </div>

@@ -13,12 +13,12 @@ import Cart from '../Cart/Cart.js';
 class Main extends Component {
     render() {
         return (
-            <main style={{overflowX:'hidden'}}>
+            <main style={{overflowX:'hidden',backgroundColor:"#f8f6f3"}}>
                 <Routes>
                     <Route path="/" element={<Home />} />
-                    <Route path="/Everything" element={<Everything />} />
-                    <Route path="/Groceries" element={<Groceries />} />
-                    <Route path="/Juice" element={<Juice />} />
+                    <Route path="/Vegitables&Friuts" element={<Everything url="freshvegitables"/>} />
+                    <Route path="/Dairy&Breakfast" element={<Everything url="milk"/>} />
+                    <Route path="/ColdDrink&Juice" element={<Everything url="beveragesgiftpack"/>} />
                     <Route path='/ProductDetail/:_id' element={<ProductDetail /> } >{/* this the path what i am going to match from url to display ProductDetail component ,here id is dynamic means it can be 1,2,3,4 */}
                         <Route path='Description' element={<Description />} />
                         {/* this is the Child Component of ProductDetail actually when i render the ProductDetail Component its Child component FrontProduct also get redered and inside that FrontProduct Description Component is Going to render on click by Link tag   */} 
