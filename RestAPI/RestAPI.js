@@ -28,7 +28,14 @@ http.createServer((req,res)=>{
     
     let result
     try{
-        if(method==='GET' && url==='/trending'){
+        if(method==='GET' && url.includes('/search')){
+            const search=url.split("/")[2].replace("%20"," ")
+            client.db().collection('post').find({name:search}).toArray()
+            .then((result)=>{res.end(JSON.stringify(result))})
+    
+          
+        }
+        else if(method==='GET' && url==='/trending'){
             client.db().collection('post').find({selling:"Trending"}).toArray()
             .then((result)=>{res.end(JSON.stringify(result))})
     

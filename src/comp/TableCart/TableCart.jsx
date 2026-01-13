@@ -2,13 +2,15 @@ import { FaPlus, FaMinus } from 'react-icons/fa';
 import React, { createContext, useEffect, useState } from 'react';
 import AddItems  from '../AddItems/AddItems.js';
 import axios from 'axios';
+import { port } from '../port/port.js';
 
 export default function TableCart({setTotal}) {
   const [items, setItems] = useState([]);
   const [serverUpdate, setSever] =useState(true)
 
   useEffect(() => {
-    axios.get("http://localhost:8080/cart")
+  
+    axios.get(`${port}/cart`)
       .then((res) => {
         setItems(res.data);
         let sum= res.data.reduce((sum,item)=>{

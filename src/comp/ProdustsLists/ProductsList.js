@@ -2,13 +2,15 @@ import React, { useContext, useEffect, useState } from "react";
 import axios from "axios";
 import Headingh2 from "../Headingh2/Headingh2"
 import Product from "../Product/Product"
+import { port } from "../port/port";
 
 
 export default function ProductsList({urltype,heading}){
 
     const [products,setProducts] =useState([])
     useEffect(()=>{
-        axios.get(`http://localhost:8080/${urltype}`)
+      
+        axios.get(`${port}/${urltype}`)
         .then((res)=>{
             setProducts(res.data)
         })

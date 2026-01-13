@@ -2,6 +2,7 @@ import axios from 'axios';
 import React, { Component } from 'react';
 import Addtocartbtn from '../Addtocartbtn/Addtocartbtn';
 import swal from 'sweetalert';
+import { review } from '../port/port';
 
 class Reviews extends Component {
 
@@ -35,13 +36,13 @@ class Reviews extends Component {
             timer: 1500
         })
 
-        axios.post("http://localhost:3012/reviews", this.state)
+        axios.post(`${review}/reviews`, this.state)
             .then((res) => {
             }).catch()
 
     }
     render() {
-        console.log("render")
+       
         console.log(this.state)
         return (
             <div className="row">
