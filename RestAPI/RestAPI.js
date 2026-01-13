@@ -1,7 +1,7 @@
 const {MongoClient} =require('mongodb')
 const http =require('http')
 const mongodburl="mongodb+srv://Bhavdeep:Bhavdeep_02{joy}@cluster0.dixfv.mongodb.net/products?retryWrites=true&w=majority&appName=Cluster0"
-const port =8080
+const port =process.env.PORT || 8080
 //connection to MongoDB
 const client=new MongoClient(mongodburl)
 
