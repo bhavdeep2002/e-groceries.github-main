@@ -14,6 +14,7 @@ export default function ProductDetail() {
   const [alerttext, setalert] = useState("")
 
   useEffect(() => {
+    console.log(port)
     axios.get(`${port}/ProductDetail/${_id}`)
       .then((res) => {
         setProduct(res.data)

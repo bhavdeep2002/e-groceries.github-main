@@ -19,7 +19,7 @@ class Servicecontainer extends Component {
                         <div className="container">
                             <div className="row">
                                 <Service img={this.state.freeshopingimg} heading="Free Shipping" description="Above $5 Only" />
-                                <Service img={this.state.certifiedimg} heading="Certified Organic" description="100% Guarantee" />
+                                <Service img={this.state.certifiedimg} heading="Fresh" description="100% Guarantee" />
                                 <Service img={this.state.hugesaving} heading="Huge Savings" description="At Lowest Price" />
                                 <Service img={this.state.easyreturn} heading="Easy Returns" description="No Questions Asked" />
                             </div>

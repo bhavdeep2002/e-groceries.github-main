@@ -2,7 +2,20 @@
     width: 120px;
     height: 70px;
 }
-#bestselling{
+.my_navbar{
+    width: 100%;
+    gap: 50px;
+}
+.my_navbar>li{
+    margin-bottom: 0px;
+    align-self: center;
+    border: 0px;
+}
+.my_navbar>li>a{
+    text-decoration: none;
+    color: #333333;
+}
+.bestselling{
  width: 100%;   
 }
 .upper-margin{
@@ -25,13 +38,28 @@
     margin: 7.5% 0% 7.5% 0% ;
     padding: 15px;
     border-radius: 2rem;
+    display: flex;
+    gap: 20px;
 }
-.servicehead{
+.service-img>svg{
+    position: relative;
+    top: 7px;
+}
+
+.service-heading{
+font-size: 28px;
+}
+.service-descrp{
+    font-size: 15px;
+}
+.
+/* .servicehead{
     font-size: 25px;
 }
 .servicedescription{
     margin-left: 49px;
-}
+} */
+
 .fivestar{
     width: 80px;
     height: 20px;
@@ -58,6 +86,9 @@
     text-decoration: none;
     color: black;
 }
+.my-card{
+    height: 55vh !important;
+}
 .card-title {
     margin-bottom: 0.5rem;
 }
@@ -73,14 +104,6 @@ p {
     height: 20px;
 }
 
-/* menu */
-li{
-    border:1px solid black;
-    margin-bottom: 2%;
-}
-li> img{
-width: 60px;
-}
 
 /* reviews form styling */
 .textarea{
@@ -119,6 +142,31 @@ width: 60px;
     border-radius: 4px;
     color:white
 }
-.bestselling{
-    width: 500px;
+
+@media screen and (max-width:912px) {
+
+    .my_navbar{
+        gap: 20px;
+    }
+    
+}
+@media screen and (max-width:1024px) {
+
+    .service-heading{
+font-size: 19px;
+}
+.service-descrp{
+    font-size: 10px;
+}
+
+.my-card{
+    height: 35vh !important;
+}
+    
+}
+
+@media screen and (width:1024px) and (height:600px){
+    .my-card{
+    height: 65vh !important;
+}
 }

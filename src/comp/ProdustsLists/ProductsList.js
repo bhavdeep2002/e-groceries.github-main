@@ -9,7 +9,7 @@ export default function ProductsList({urltype,heading}){
 
     const [products,setProducts] =useState([])
     useEffect(()=>{
-      
+      console.log(port)
         axios.get(`${port}/${urltype}`)
         .then((res)=>{
             setProducts(res.data)
