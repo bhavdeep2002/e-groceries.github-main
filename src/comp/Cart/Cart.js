@@ -14,14 +14,14 @@ export default function Cart() {
         </div>
       </div>
       <div className="row">
-        <div className="col-md-1">1</div>
+        <div className="col-md-1"></div>
         <div className="col-md-10"><h1>Cart</h1>
           <TableCart setTotal={setTotal}/>
         </div>
-        <div className="col-md-1">3</div>
+        <div className="col-md-1"></div>
       </div>
       <div className="row">
-        <div className="col-md-1">1</div>
+        <div className="col-md-1"></div>
         <div className="col-md-10"><h1>Total {total}</h1>
 
         </div>
