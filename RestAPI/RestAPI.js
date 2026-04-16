@@ -46,11 +46,6 @@ http.createServer((req,res)=>{
             .then((result)=>{res.end(JSON.stringify(result))})
     
         }
-        else if(method==='GET' && url==='/reviews'){
-            client.db().collection('post').find({selling:"Bestselling"}).toArray()
-            .then((result)=>{res.end(JSON.stringify(result))})
-    
-        }
         else if(method==='GET' && url==='/cart'){
             client.db().collection('post').find({count:{$ne:0}}).toArray()
             .then((result)=>{res.end(JSON.stringify(result))})

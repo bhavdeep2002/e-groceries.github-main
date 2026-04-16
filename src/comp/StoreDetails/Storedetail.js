@@ -13,7 +13,8 @@ class Storedetail extends Component {
                                 <h1 style={{ fontSize: "50px" }}>Join The Organic <br /> Movement!</h1>
                             </div>
                             <div>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.</p>
+                                <p>Join The Organic Movement!
+Discover fresh and natural groceries sourced with care. Enjoy healthy products that bring quality, taste, and nutrition to your everyday meals.</p>
                             </div>
                         </div>
                         <div className="col-md-3" style={{ width: "20%" }}>

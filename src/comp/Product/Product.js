@@ -14,7 +14,7 @@ class Product extends Component {
   render() {
         const {image,category,name,price,_id} =this.props
     return (
-            <div>
+            <div style={{marginTop:"4%"}}>
             {/*remember Link tag becomes anchor tag in DOM /Rendered HTML but page does reloads*/}
             <Link className='LINK' to={`/ProductDetail/${_id}`}>{/* when i click on the product it will past the link in url and ${_id} reprents the _id of a particular product from  our Route will match path and render a component corresponding to that path */}
               <div className="card my-card" >

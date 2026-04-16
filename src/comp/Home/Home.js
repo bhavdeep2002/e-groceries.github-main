@@ -2,11 +2,12 @@ import React, { Component } from 'react';
 import Servicecontainer from '../Service-container/Servicecontainer';
 import Storedetail from '../StoreDetails/Storedetail';
 import ProductsList from '../ProdustsLists/ProductsList';
+import Reviews from '../Reviews/Reviews';
 
 class Home extends Component {
     render() {
         return (
-            <div className="container-flex background-color">
+            <div className="container-flex background-color" style={{overflow:"hidden"}}>
                 <div className="row">
                     <div className="col-md-12 upper-margin"></div>
                 </div>
@@ -29,8 +30,8 @@ class Home extends Component {
                 <ProductsList heading="Best Selling Products" urltype="bestselling" />
                 {/*Bestselling products component having props as heading Trending Products */}
                 <ProductsList heading="Trending Products" urltype="trending" />
-                {/*Bestselling products component having props as heading Customers Reviews*/}
-                <ProductsList heading="Customers Reviews" urltype="reviews" />
+                
+                <Reviews />
                 
             </div>
         );
